@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "SystemUIOverlayX6833B",
+    theme: "SystemUIOverlayX6833B",
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}
