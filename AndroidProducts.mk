@@ -16,16 +16,12 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_X6833B.mk \
     $(LOCAL_DIR)/lineage_X6833B.mk \
     $(LOCAL_DIR)/superior_X6833B.mk \
     $(LOCAL_DIR)/evolution_X6833B.mk
    
 
 COMMON_LUNCH_CHOICES := \
-    cherish_X6833B-user \
-    cherish_X6833B-userdebug \
-    cherish_X6833B-eng \
     lineage_X6833B-user \
     lineage_X6833B-userdebug \
     lineage_X6833B-eng \
