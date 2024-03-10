@@ -120,31 +120,3 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true
 }
-
-prebuilt_etc {
-    name: "factory_init.connectivity.common.rc",
-    src: "etc/factory_init.connectivity.common.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
-    name: "factory_init.connectivity.rc",
-    src: "etc/factory_init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
-    name: "factory_init.project.rc",
-    src: "etc/factory_init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
-    name: "factory_init.rc",
-    src: "etc/factory_init.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
