@@ -11,6 +11,9 @@ on init
 
 on post-fs-data
 
+    # AudioDump
+    mkdir /data/vendor/audiohal
+
 #Camera
     chmod 0660 /dev/MAINAF
     chown system camera /dev/MAINAF
