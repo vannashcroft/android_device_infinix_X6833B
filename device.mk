@@ -75,8 +75,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.1.vendor \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio-impl 
+    audio.bluetooth.default 
 
 PRODUCT_PACKAGES += \
     libalsautils \
