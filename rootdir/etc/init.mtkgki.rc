@@ -10,3 +10,18 @@ on early-init
     write /proc/bootprof "modprobe: Load_Module_START"
     start insmod_sh
 
+on boot 
+# conferm
+insmod /vendor/lib/modules/connfem.ko
+# Tran Fre
+insmod /vendor/lib/modules/tran_fre.ko
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/fre_db_cmd
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/fre_db_cmd
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/fre_db_status
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/fre_db_status
+    
+# radio
+on property:vendor.connsys.driver.ready=yes
+  insmod /vendor/lib/modules/fmradio_drv_${ro.vendor.fm.platform}.ko
+
+
