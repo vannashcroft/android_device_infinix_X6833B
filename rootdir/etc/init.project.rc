@@ -13,7 +13,6 @@ on post-fs-data
 
     # AudioDump
     mkdir /data/vendor/audiohal
-    chown -R system system /sys/class/leds/vibrator_single/
 #Camera
     chmod 0660 /dev/MAINAF
     chown system camera /dev/MAINAF
@@ -80,6 +79,7 @@ on post-fs-data
     chown system system /sys/class/leds/vibrator_single/trigger
     chown system system /sys/class/leds/vibrator_single/uevent
     chown system system /sys/class/leds/vibrator_single/vbat_monitor
+    chown system system /sys/class/leds/vibrator_single/
     # BSP:modify for LRA XLWYEHLYEL-1 by hongwu.zhan 20221104 end
 
 on init
