@@ -61,31 +61,35 @@ PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk.vendor
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service
+
+PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio-impl
+
+PRODUCT_PACKAGES += \
+    libaudiofoundation.vendor \
+    libbluetooth_audio_session \
+    libalsautils \
+    libnbaio_mono \
+    libtinycompress \
+    libdynproc \
+    libhapticgenerator
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-
-# Bluetooth Audio (System-side HAL, sysbta)
+# Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@7.0-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1.vendor \
-    audio.bluetooth.default 
-
-PRODUCT_PACKAGES += \
-    libalsautils \
-    libaudiofoundation.vendor \
-    libdynproc \
-    libhapticgenerator
-
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    android.hardware.bluetooth@1.1.vendor
 
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
