@@ -143,7 +143,9 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
     
-
+# PQ 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/pq,$(TARGET_COPY_OUT_VENDOR)/etc)
       
 # Permissions
 PRODUCT_COPY_FILES += \
