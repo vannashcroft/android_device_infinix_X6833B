@@ -360,7 +360,8 @@ PRODUCT_PACKAGES += \
     WifiResOverlayX6833B \
     SystemUIOverlayX6833B \
     SettingsOverlayX6833B \
-    FrameworkOverlayX6833B
+    FrameworkOverlayX6833B \
+    CarrierConfigOverlayX6833B
 
 
 
