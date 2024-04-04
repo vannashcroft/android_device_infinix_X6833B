@@ -25,5 +25,5 @@ BUILD_FINGERPRINT := Infinix/X6833B-GL/Infinix-X6833B:13/TP1A.220624.014/240103V
 PRIVATE_BUILD_DESC="sys_tssi_64_armv82_infinix-user 13 TP1A.220624.014 377398 release-keys"
 # Maintainer Stuff
 MAINTAINER := "RAFI_AQ"
-BUILD_WITH_GMS := true
+BUILD_WITH_GAPPS := true
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
