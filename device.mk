@@ -364,7 +364,8 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayX6833B \
     SettingsOverlayX6833B \
     FrameworkOverlayX6833B \
-    CarrierConfigOverlayX6833B
+    CarrierConfigOverlayX6833B \
+    TelephonyOverlayX6833B
 
 
 
