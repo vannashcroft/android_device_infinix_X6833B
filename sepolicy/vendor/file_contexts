@@ -14,6 +14,7 @@
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-mediatek    u:object_r:hal_fingerprint_default_exec:s0
 /sys/kernel/tran_fp(/.*)?                                                                       u:object_r:sysfs_fp_name_path:s0
 /data/vendor/goodix/gf_data(/.*)?                                                               u:object_r:vendor_gf_data_file:s0
+/dev/fpsensor           u:object_r:fpsensor_fp_device:s0
 
 # LED
 /sys/devices/platform/11d03000.i2c7/i2c-7/7-006a/tran_led_cmd                           u:object_r:sysfs_tran_led_file:s0
