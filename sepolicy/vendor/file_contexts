@@ -28,3 +28,7 @@
 
 # Tranlog
 /dev/tranlog_.*                                                                         u:object_r:tranlog_device:s0
+
+# NFC
+/dev/pn54x             u:object_r:nfc_device:s0
+/dev/pn553             u:object_r:nfc_device:s0

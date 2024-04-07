@@ -1,3 +1,4 @@
 allow hal_nfc_default sysfs_soc:dir search;
 allow hal_nfc_default sysfs_soc:file { read open getattr };
 allow hal_nfc_default hal_nfc_hwservice:hwservice_manager { find add };
+allow hal_nfc_default nfc_device:chr_file { ioctl read write open };
