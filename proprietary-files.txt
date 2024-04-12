@@ -48,9 +48,11 @@ vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/librt_extamp_intf.so
+vendor/lib/libruy.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/libtinycompress.so
 vendor/lib64/hw/audio.primary.mediatek.so
 vendor/lib64/hw/audio.r_submix.mediatek.so
@@ -80,9 +82,11 @@ vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
+vendor/lib64/libruy.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/libtinycompress.so
 
 # Audio Configs
@@ -1891,6 +1895,7 @@ vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
+vendor/lib64/libadpcmdec_mtk.so
 
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
@@ -1906,6 +1911,7 @@ vendor/lib/libcodec2_soft_mtk_mp3dec.so
 vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
+vendor/lib/libmp3dec_mtk.so
 vendor/lib/libformatter.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
@@ -1917,6 +1923,7 @@ vendor/lib64/libcodec2_soft_mtk_mp3dec.so
 vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libformatter.so
 
 # Neural Networks
@@ -2097,6 +2104,7 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # IMS
+system/bin/vtservice
 system/etc/init/init.vtservice.rc
 system/framework/mediatek-carrier-config-manager.jar
 system/framework/mediatek-common.jar
