@@ -36,3 +36,8 @@ vendor.service.nvram_restore                u:object_r:vendor_mtk_service_nvram_
 
 # VT
 ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+# imsvt signale strength
+vendor.ims.vt.signalstrength.1    u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
+vendor.ims.vt.signalstrength.2    u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
+vendor.ims.vt.signalstrength.    u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
