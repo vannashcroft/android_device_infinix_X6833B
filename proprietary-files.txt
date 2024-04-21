@@ -2078,6 +2078,7 @@ vendor/lib/libmtkspparser.so
 vendor/lib/libmtksysutils.so
 vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
+vendor/lib/libipsec_ims_shr.so
 vendor/lib/libsysenv.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
@@ -2112,6 +2113,7 @@ vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
+vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libwpfa.so
 vendor/lib64/libverno.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
