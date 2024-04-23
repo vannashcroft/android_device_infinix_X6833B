@@ -2300,3 +2300,8 @@ vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Other
 vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+
+# KERNEL POWER OFF CHARGING (KPOC)
+system/bin/kpoc_charger
+system/etc/init/kpoc_charger.rc
+system/lib64/libshowlogo.so

@@ -219,7 +219,12 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor
 PRODUCT_PACKAGES += \
-    libdrm.vendor
+    libdrm.vendor \
+    libdrm
+
+# Charger 
+PRODUCT_PACKAGES += \
+    libsuspend
     
 # IMS
 
@@ -235,7 +240,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.1-service \
+    android.hardware.health-V1-ndk 
     
 # Media
 PRODUCT_PACKAGES += \
