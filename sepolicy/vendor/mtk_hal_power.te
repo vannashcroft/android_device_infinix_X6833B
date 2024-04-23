@@ -1,3 +1,4 @@
 allow mtk_hal_power proc_meminfo:file r_file_perms;
 allow mtk_hal_power proc_gesture_function:file rw_file_perms;
 allow mtk_hal_power proc_main_gesture_function:file rw_file_perms;
+allow mtk_hal_power proc_watermark_scale_factor:file rw_file_perms;
