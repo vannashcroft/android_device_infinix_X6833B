@@ -1,0 +1,10 @@
+
+ 
+allow init kpoc_charger:process { transition };
+allow kpoc_charger kpoc_charger_exec:file { read getattr map execute open entrypoint };
+dontaudit init kpoc_charger:process { noatsecure };
+allow init kpoc_charger:process { siginh rlimitinh };
+allow kpoc_charger sysfs_dt_firmware_android:dir { ioctl read getattr lock open watch watch_reads search };
+allow kpoc_charger sysfs_dt_firmware_android:file { ioctl read getattr lock map open watch watch_reads };
+allow kpoc_charger sysfs_dt_firmware_android:lnk_file { ioctl read getattr lock map open watch watch_reads };
+permissive kpoc_charger;
