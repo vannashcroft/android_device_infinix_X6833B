@@ -111,13 +111,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-mtkimpl.recovery \
-    android.hardware.boot@1.1-mtkimpl \
-    android.hardware.boot-service.default \
+    com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctrl
 
 # Build MT-PL-Utils
 PRODUCT_PACKAGES += \
