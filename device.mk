@@ -323,6 +323,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor \
+    libwifi-hal-wrapper \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
     
