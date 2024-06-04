@@ -220,11 +220,6 @@ PRODUCT_PACKAGES += \
 # Charger 
 PRODUCT_PACKAGES += \
     libsuspend
-    
-# IMS
-
-PRODUCT_PACKAGES += \
-    libshim_vtservice
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
