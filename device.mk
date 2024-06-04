@@ -116,8 +116,8 @@ PRODUCT_PACKAGES += \
 
 # Build MT-PL-Utils
 PRODUCT_PACKAGES += \
-    mtk_plpath_utils \
-    mtk_plpath_utils.recovery
+    create_pl_dev \
+    create_pl_dev.recovery
 
 # fastbootd
 PRODUCT_PACKAGES += \
