@@ -8,6 +8,7 @@ allow hal_audio_default vow_device:chr_file rw_file_perms;
 allow hal_audio_default sysfs_therm:dir { read search };
 allow hal_audio_default sysfs_batteryinfo:dir { read search };
 allow hal_audio_default sysfs_batteryinfo:file rw_file_perms;
+allow hal_audio_default sysfs_therm:file rw_file_perms;
 
 dontaudit hal_audio_default hal_power_hwservice:hwservice_manager find;
 
