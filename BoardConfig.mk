@@ -49,6 +49,7 @@ AB_OTA_PARTITIONS += \
     scp \
     spmfw \
     sspm \
+    preloader_raw \
     system \
     system_ext \
     tee \
@@ -89,8 +90,7 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
 # Security Patch
-VENDOR_SECURITY_PATCH := 2023-10-05
-BOOT_SECURITY_PATCH := 2023-10-05
+VENDOR_SECURITY_PATCH := 2024-04-05
 
 # Build system
 BUILD_BROKEN_DUP_RULES := true
