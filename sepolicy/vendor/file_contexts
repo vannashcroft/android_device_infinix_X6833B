@@ -30,5 +30,6 @@
 /dev/tranlog_.*                                                                         u:object_r:tranlog_device:s0
 
 # NFC
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service       u:object_r:hal_nfc_default_exec:s0
 /dev/pn54x             u:object_r:nfc_device:s0
 /dev/pn553             u:object_r:nfc_device:s0
