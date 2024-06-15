@@ -1716,7 +1716,6 @@ system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.
 system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar
 system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar
 system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar
-system_ext/framework/mediatek-services.jar:system/framework/mediatek-services.jar
 system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar
 system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
 system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
@@ -1738,7 +1737,7 @@ system_ext/lib64/libsource.so
 system_ext/lib64/libvcodec_cap.so
 system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
-system_ext/priv-app/ImsService/ImsService.apk|45422988948c9ace658151541c36b1044c5eac11
+system_ext/priv-app/ImsService/ImsService.apk|c84bc2b92825c48e439fdc557acca7941ce2c348
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
