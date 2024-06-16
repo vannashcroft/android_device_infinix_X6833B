@@ -85,6 +85,9 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             ;;
+            system_ext/lib64/libsource.so)
+            "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
+            ;;
     esac
 }
 

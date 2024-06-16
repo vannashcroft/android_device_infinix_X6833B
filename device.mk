@@ -364,7 +364,9 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayX6833B \
     TelephonyOverlayX6833B
 
-
+# Shim 
+PRODUCT_PACKAGES += \
+    libshim_ui \
 
 # Rootdir
 PRODUCT_PACKAGES += \
