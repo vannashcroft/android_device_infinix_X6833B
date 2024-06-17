@@ -264,7 +264,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
     
-    
+# Lights 
+PRODUCT_PACKAGES += \
+  android.hardware.lights-service.mediatek 
+  
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
@@ -352,6 +355,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
+
 PRODUCT_PACKAGES += \
     WifiResOverlayX6833B \
     SystemUIOverlayX6833B \
