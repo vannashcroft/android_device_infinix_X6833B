@@ -225,6 +225,7 @@ persist.vendor.viwifi_support=1
 persist.vendor.volte_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
+persist.vendor.mims_support=2
 
 # Media
 debug.mediatek.disp_decompress=1
