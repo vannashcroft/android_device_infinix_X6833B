@@ -194,7 +194,7 @@ BOARD_SUPER_PARTITION_GROUPS := infinix_dynamic_partitions
 
 
 # Platform
-BOARD_VENDOR := infinix
+BOARD_VENDOR := Infinix
 TARGET_BOARD_PLATFORM := mt6789
 BOARD_HAS_MTK_HARDWARE = true
 
