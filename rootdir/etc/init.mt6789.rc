@@ -1185,3 +1185,6 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/watermark_scale_factor 200
     setprop vendor.tran.cur_max_process 72
 #SPD: add for watermark_scale_factor at 20230302 end
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2
+    
