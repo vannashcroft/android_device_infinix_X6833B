@@ -389,8 +389,6 @@
     
   <bool name="config_displayBlanksAfterDoze">false</bool>
   
-    <bool name="config_lidControlsSleep">true</bool>
-    
         <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
         
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
