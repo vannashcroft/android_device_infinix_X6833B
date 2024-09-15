@@ -143,6 +143,8 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=1
 ro.vendor.mtk_mvpu_security_support=0
 ro.vendor.mtk_fd_support=1
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=0
 
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
