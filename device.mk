@@ -386,7 +386,8 @@ PRODUCT_PACKAGES += \
     init.recovery.usb.rc \
     init.mt6789.rc \
     init.mtkgki.rc \
-    init.insmod.mt6789.cfg 
+    init.insmod.mt6789.cfg \
+    fstab.enableswap 
     
 
 # Screen density
