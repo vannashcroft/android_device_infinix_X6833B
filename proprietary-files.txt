@@ -1,4 +1,4 @@
-## X6833B package version: X6833B-H894DEFGHI-U-GL-240502V576, unless stated otherwise
+## X6833B package version: X6833B-H894DEFGHI-U-GL-240502V836, unless stated otherwise
 # AEE
 vendor/lib/libaedv.so
 vendor/lib64/libaedv.so
