@@ -46,3 +46,6 @@ genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-0058/leds/vibrator_sin
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                 u:object_r:sysfs_sub_torch_file:s0
 genfscon sysfs /devices/virtual/torch/torch/torch_level                                             u:object_r:sysfs_torch_file:s0
+
+# touch
+genfscon proc /game_state u:object_r:proc_gesture_flag:s0 
