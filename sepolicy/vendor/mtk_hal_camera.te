@@ -20,3 +20,6 @@ allow mtk_hal_camera hal_trancamserver_hwservice:hwservice_manager find;
 
 get_prop(mtk_hal_camera, vendor_camera_prop)
 set_prop(mtk_hal_camera, vendor_mtk_camera_prop)
+
+allow mtk_hal_camera sysfs_sensor:dir { read open search};
+allow mtk_hal_camera sysfs_sensor:file r_file_perms;
