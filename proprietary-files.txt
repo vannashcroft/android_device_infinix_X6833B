@@ -1875,6 +1875,11 @@ system_ext/lib64/libshowlogo.so
 # TRAN CAM
 
 system_ext/app/TranssionCamera/TranssionCamera.apk
+vendor/lib64/libancbase_848.so
+vendor/lib64/libanc_hdr.so
+vendor/lib64/libanc_hdr_adapter_hi1631q_17201701_front_g97.so
+vendor/lib64/libanc_hdr_adapter_hi1634q_17201821_front_g97.so
+vendor/lib64/libanc_hdr_adapter_ov64b40_17201840_back_g97.so
 
 vendor/data/camera/bemakeup/.DS_Store
 vendor/data/camera/bemakeup/beauty_4Items/config.json
