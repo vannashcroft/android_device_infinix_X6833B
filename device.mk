@@ -451,6 +451,7 @@ PRODUCT_PACKAGES += \
 	libpower.vendor \
 	libutilscallstack.vendor \
 	libhidlmemory.vendor \
+	libprocessgroup.vendor
 
 
 # Radio

@@ -95,6 +95,16 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+            vendor/lib*/hw/audio.primary.mediatek.so)
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
+            ;;
+            vendor/lib*/libalsautils-v32.so)
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
+            ;;
     esac
 }
 
