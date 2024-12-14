@@ -5,6 +5,14 @@
       <item>0:2:15</item>
     </string-array>
 
+
+<array name="config_sfps_sensor_props_0" translatable="false">
+          <item>local:0</item>     <!-- displayId -->
+          <item>1080</item> <!-- sensorLocationX -->
+          <item>1050</item>  <!-- sensorLocationY -->
+          <item>210</item>  <!-- sensorRadius -->
+     </array>
+     
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
          When false, autosuspend_disable() will be called before the display is turned on
