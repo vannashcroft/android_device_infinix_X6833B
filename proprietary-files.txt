@@ -1835,7 +1835,6 @@ vendor/lib64/hw/thermal_hal.so
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
-vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/lib/libvibrator.so
 vendor/lib64/libvibrator.so
 vendor/lib64/libaacvibrator.so
