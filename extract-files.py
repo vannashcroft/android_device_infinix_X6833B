@@ -87,6 +87,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
         .replace_needed('libbinder.so', 'libbinder-v32.so')
         .add_needed('libstagefright_foundation-v33.so'),    
+    
+    'system_ext/lib64/libimsma.so': blob_fixup()
+         .replace_needed('libsink.so', 'libsink-mtk.so'),
+ 
+    'system_ext/lib64/libsink-mtk.so': blob_fixup(),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
