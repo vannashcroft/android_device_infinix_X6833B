@@ -38,7 +38,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/infinix/X6833B/X6833B-vendor.mk)
-
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -51,9 +50,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
     libtextclassifier_hash.vendor
-
-# Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 31
 
 # NDK
 PRODUCT_PACKAGES += \
@@ -352,6 +348,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
+PRODUCT_PACKAGES += \
+     libmtkperf_client_vendor \
+     libmtkperf_client
+     
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -402,7 +402,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
-    
+
 # Properties
 include $(LOCAL_PATH)/config/prop/default.mk
 include $(LOCAL_PATH)/config/prop/vendor_logtag.mk
