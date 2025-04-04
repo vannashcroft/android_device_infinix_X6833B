@@ -329,7 +329,6 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
-    NfcNci \
     com.android.nfc_extras \
     Tag \
     SecureElement
@@ -348,10 +347,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
-PRODUCT_PACKAGES += \
-     libmtkperf_client_vendor \
-     libmtkperf_client
-     
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
