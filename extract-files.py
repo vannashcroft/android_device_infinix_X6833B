@@ -92,6 +92,11 @@ blob_fixups: blob_fixups_user_type = {
          .replace_needed('libsink.so', 'libsink-mtk.so'),
  
     'system_ext/lib64/libsink-mtk.so': blob_fixup(),
+    
+    ('vendor/lib64/mt6789/lib3a.flash.so', 'vendor/lib64/mt6789/lib3a.ae.stat.so', 'vendor/lib64/mt6789/lib3a.sensors.flicker.so',
+     'vendor/lib64/mt6789/lib3a.sensors.color.so', 'vendor/lib64/mt6789/libaaa_ltm.so', 'vendor/lib64/lib3a.ae.pipe.so',
+     'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
+        .add_needed('liblog.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
