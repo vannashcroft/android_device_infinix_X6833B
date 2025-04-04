@@ -69,9 +69,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libstagefright_foundation-v33.so'),
         
     'vendor/bin/hw/mt6789/camerahalserver': blob_fixup()
-        .replace_needed('libhidlbase.so', 'libhidlbase-v31.so')
-        .replace_needed('libbinder.so', 'libbinder-v31.so')
-        .replace_needed('libutils.so', 'libutils-v31.so'),    
+        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
+        .replace_needed('libbinder.so', 'libbinder-v32.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),    
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libshim_ui.so'),
         
