@@ -24,6 +24,7 @@ vendor/lib/hw/audio.primary.mediatek.so
 vendor/lib/hw/audio.r_submix.mediatek.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v32.so;FIX_SONAME
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -85,6 +86,7 @@ vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/libtinycompress.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v32.so;FIX_SONAME
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio Configs
@@ -1450,20 +1452,6 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 -vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 -vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 
-# Media
-vendor/bin/mt6789/v3avpud.mt6789
-vendor/etc/init/v3avpud.rc
-vendor/lib/mt6789/libvcodec_utility.so
-vendor/lib/mt6789/libvcodec_utility_v3a.so
-vendor/lib/mt6789/libvcodecdrv.so
-vendor/lib/mt6789/libvcodecdrv_v3a.so
-vendor/lib/mt6789/libvpudv3a_vcodec.so
-vendor/lib/libvcodec_oal.so
-vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvpu5.so
-vendor/lib/libvpud_vcodec.so
-vendor/lib64/libvpu.so
-
 # Media (OMX)
 vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAlacDec.so
@@ -1521,14 +1509,10 @@ vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
-vendor/lib64/libneuron_platform.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
 vendor/lib64/libtflite_mtk.so
-vendor/lib64/libtranslator_mapi_v3.0.so
-vendor/lib64/libtranslator_mdmi_v2.8.2.so
-vendor/lib64/libtranslator_utils.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
@@ -1581,7 +1565,6 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # Radio
 vendor/bin/hw/mtkfusionrild
 vendor/bin/hw/vtservice_hidl
-vendor/bin/atcid
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd
@@ -1710,9 +1693,9 @@ system_ext/priv-app/ImsService/ImsService.apk|bcfeeee3bf8079a3f1feb815042b907bf4
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=-vendor
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=-vendor
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 
 
