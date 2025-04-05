@@ -1,8 +1,8 @@
-allow mtk_hal_sensors gsi_metadata_file:dir search;
-allow mtk_hal_sensors metadata_file:dir search;
-allow mtk_hal_sensors sysfs_dt_firmware_android:dir search;
-allow mtk_hal_sensors sysfs_dt_firmware_android:file { open read getattr };
-allow mtk_hal_sensors nvdata_file:dir { read open search};
-allow mtk_hal_sensors nvdata_file:file { getattr read write open };
-allow mtk_hal_sensors proc_bootconfig:file { getattr read write open };
-allow mtk_hal_sensors nvram_device:blk_file { read write open };
+allow hal_sensors_default gsi_metadata_file:dir search;
+allow hal_sensors_default metadata_file:dir search;
+allow hal_sensors_default sysfs_dt_firmware_android:dir search;
+allow hal_sensors_default sysfs_dt_firmware_android:file { open read getattr };
+allow hal_sensors_default nvdata_file:dir { read open search};
+allow hal_sensors_default nvdata_file:file { getattr read write open };
+allow hal_sensors_default proc_bootconfig:file { getattr read write open };
+allow hal_sensors_default nvram_device:blk_file { read write open };
