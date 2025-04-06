@@ -97,6 +97,19 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/mt6789/lib3a.sensors.color.so', 'vendor/lib64/mt6789/libaaa_ltm.so', 'vendor/lib64/lib3a.ae.pipe.so',
      'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
         .add_needed('liblog.so'),
+        
+         ('vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so', 'vendor/lib64/ese_spi_nxp.so', 'vendor/lib64/libstfactory-vendor.so',
+     'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so',
+     'vendor/lib/libtflite_mtk.so', 'vendor/lib64/libtflite_mtk.so', 'vendor/lib64/nfc_nci_nxp_snxxx.so', 'vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2'): blob_fixup()
+        .add_needed('libbase_shim.so'),
+        
+        
+     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+        
+     'system_ext/bin/kpoc_charger': blob_fixup()
+        .add_needed('libbinder_shim.so'),
+        
 }  # fmt: skip
 
 module = ExtractUtilsModule(
