@@ -53,12 +53,6 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
         
-    'vendor/bin/hw/android.hardware.vibrator-service.mediatek': blob_fixup()
-        .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
-        
-    'vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service': blob_fixup()
-        .replace_needed('android.hardware.power-V2-ndk_platform.so', 'android.hardware.power-V2-ndk_platform.so'),
-        
     'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
