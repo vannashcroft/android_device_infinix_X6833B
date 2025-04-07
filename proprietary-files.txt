@@ -1782,12 +1782,6 @@ vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
 
-# Vibrator
-vendor/bin/hw/android.hardware.vibrator-service.mediatek;DISABLE_CHECKELF
-vendor/etc/init/vibrator-mtk-default.rc
-vendor/lib64/libaacvibrator.so
-vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
-
 # WLan
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/conninfra_loader

@@ -477,3 +477,7 @@ PRODUCT_PACKAGES += \
     fsck.ntfs \
     mkfs.ntfs \
     mount.ntfs
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.transsion
