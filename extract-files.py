@@ -104,6 +104,8 @@ blob_fixups: blob_fixups_user_type = {
      'system_ext/bin/kpoc_charger': blob_fixup()
         .add_needed('libbinder_shim.so'),
         
+     'vendor/lib64/mt6789/libmnl.so': blob_fixup()
+	.add_needed('libcutils.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
