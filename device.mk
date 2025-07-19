@@ -42,6 +42,8 @@ $(call inherit-product-if-exists, vendor/infinix/X6833B/X6833B-vendor.mk)
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
