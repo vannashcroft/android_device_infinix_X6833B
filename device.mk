@@ -32,12 +32,16 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
+
 # Enable compressed snapshots with Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/infinix/X6833B/X6833B-vendor.mk)
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -128,6 +132,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor
+
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
@@ -136,11 +141,11 @@ PRODUCT_PACKAGES += \
     sg_write_buffer \
     f2fs_io \
     check_f2fs
-    
-# PQ 
+
+# PQ
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/pq,$(TARGET_COPY_OUT_VENDOR)/etc)
-      
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -185,7 +190,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
-    
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -196,7 +201,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
-    
 
 # Graphics
     PRODUCT_PACKAGES += \
@@ -205,18 +209,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor 
- 
-  
-# DRM 
+    android.hardware.graphics.mapper@4.0.vendor
+
+# DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
+
 PRODUCT_PACKAGES += \
     libdrm.vendor \
     libdrm
 
-# Charger 
+# Charger
 PRODUCT_PACKAGES += \
     libsuspend
 
@@ -230,8 +234,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service \
-    android.hardware.health-V1-ndk 
-    
+    android.hardware.health-V1-ndk
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
@@ -246,11 +250,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/media,$(TARGET_COPY_OUT_VENDOR)/etc)
-    
+
     PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -262,11 +267,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
-    
-# Lights 
+
+# Lights
 PRODUCT_PACKAGES += \
-  android.hardware.lights-service.mediatek 
-  
+  android.hardware.lights-service.mediatek
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
@@ -276,21 +281,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/config/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-goodix.idc
-    
+
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
-	
+
 # keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     android.hardware.security.rkp-V1-ndk.vendor \
-    libcppbor_external.vendor:64 
-    
+    libcppbor_external.vendor:64
 
-    
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
@@ -312,7 +315,7 @@ PRODUCT_COPY_FILES += \
 # MtkInCallService
 PRODUCT_PACKAGES += \
     MtkInCallService
-    
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
@@ -323,7 +326,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
-    
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
@@ -334,13 +337,13 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     Tag \
     SecureElement
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/config/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/config/nfc/libnfc-slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-slm.conf \
     $(LOCAL_PATH)/config/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
-    
+
     # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
@@ -363,7 +366,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayX6833B \
     TelephonyOverlayX6833B
 
-# Shim 
+# Shim
 PRODUCT_PACKAGES += \
     libshim_ui \
 
@@ -386,8 +389,7 @@ PRODUCT_PACKAGES += \
     init.mt6789.rc \
     init.mtkgki.rc \
     init.insmod.mt6789.cfg \
-    fstab.enableswap 
-    
+    fstab.enableswap
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -395,8 +397,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
@@ -408,7 +408,7 @@ include $(LOCAL_PATH)/config/prop/vendor_logtag.mk
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-    
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -462,8 +462,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-com.mediatek.ims.xml
 
-
-    
 # Update engine
 PRODUCT_PACKAGES += \
     checkpoint_gc \

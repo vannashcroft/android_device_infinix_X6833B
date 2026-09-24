@@ -1,45 +1,28 @@
 #
-# Copyright (C) 2023 LineageOS
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from device makefile
+# Inherit from device makefile.
 $(call inherit-product, device/infinix/X6833B/device.mk)
 
-# Inherit some common crDroid stuff
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := X6833B
+BOARD_VENDOR := Infinix
 PRODUCT_NAME := lineage_X6833B
+PRODUCT_DEVICE := X6833B
+PRODUCT_MANUFACTURER := INFINIX
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X6833B
-PRODUCT_MANUFACTURER := INFINIX
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
 
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-       DeviceProduct=X6833B-GL \
-       RisingMaintainer="Rafi_Asyddiq"
-
-
-BUILD_FINGERPRINT := Infinix/X6833B-GL/Infinix-X6833B:14/UP1A.231005.007/240703V836:user/release-keys
-WITH_GMS := true
-TARGET_CORE_GMS := true
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
-
-PRODUCT_NO_CAMERA := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-TARGET_ENABLE_PIXEL_FEATURES := true
-TARGET_ENABLE_BLUR := false
-RISING_MAINTAINER := Rafi_Asyddiq
-    
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DeviceName=X6833B \
+    BuildFingerprint=Infinix/X6833B-GL/Infinix-X6833B:14/UP1A.231005.007/250217V908:user/release-keys
