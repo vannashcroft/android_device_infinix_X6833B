@@ -1,4 +1,4 @@
-## X6833B package version: X6833B-H894DEFGHI-U-GL-240502V836, unless stated otherwise
+## X6833B package version: X6833B-H894DEFGHI-U-GL-250217V908, unless stated otherwise
 # AEE
 vendor/lib/libaedv.so
 vendor/lib64/libaedv.so
@@ -153,7 +153,7 @@ vendor/etc/audio_param/SpeechUI_AudioParam.xml
 vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml
 vendor/etc/audio_param/SpeechVolUI_AudioParam.xml
 vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechVol_AudioParam.xml|bd907725863fa84872d74f6e2c77c9f4c8d7525a
+vendor/etc/audio_param/SpeechVol_AudioParam.xml
 vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml
 vendor/etc/audio_param/Speech_AudioParam.xml
 vendor/etc/audio_param/Speech_ParamTreeView.xml
@@ -1685,7 +1685,7 @@ system_ext/lib64/libsource.so
 system_ext/lib64/libvcodec_cap.so
 system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
-system_ext/priv-app/ImsService/ImsService.apk|bcfeeee3bf8079a3f1feb815042b907bf4ede19b
+system_ext/priv-app/ImsService/ImsService.apk
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
@@ -1801,7 +1801,7 @@ vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # KERNEL POWER OFF CHARGING (KPOC)
 system_ext/bin/kpoc_charger
-system_ext/etc/init/kpoc_charger.rc|727ff63422f85e65806da69f02aacf07957b0b87
+system_ext/etc/init/kpoc_charger.rc
 system_ext/lib64/libshowlogo.so
 
 
